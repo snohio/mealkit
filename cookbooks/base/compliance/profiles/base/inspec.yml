@@ -1,0 +1,16 @@
+---
+# Cookbook:: base
+
+# The Chef InSpec reference, with examples and extensive documentation, can be
+# found at https://docs.chef.io/inspec/profiles/
+
+name: base
+title: base
+maintainer: Mike Butler
+copyright: Progress Software
+copyright_email: michael.butler@progress.com
+license: All Rights Reserved
+summary: Base Policy for SA Demos
+version: 0.1.1
+supports:
+  platform: os

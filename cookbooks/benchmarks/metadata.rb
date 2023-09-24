@@ -1,0 +1,7 @@
+name 'benchmarks'
+maintainer 'Mike Butler'
+maintainer_email 'michael.butler@progress.com'
+license 'All Rights Reserved'
+description 'Runs the STIG Benchmarks for each OS'
+version '0.2.0'
+chef_version '>= 18.0'
