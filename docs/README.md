@@ -1,5 +1,7 @@
 # Preparing a Delicious Dish of Compliance from a Chef "Meal Kit"
 
+You can also find this published as a [Github Page](https://snohio.github.io/mealkit/)
+
 ## Description
 
 Chef's Premium Content is delivered fresh to you with only the finest ingredients of code. Utilizing that premium audit and remediation content (as I like to call it "meal kit"), I will teach you how to create a wrapper of compliance to deliver to your systems to ensure persistence and validation. Utilizing this method will get you from sous to head chef in the shortest time possible.
@@ -15,7 +17,6 @@ For this Workshop to participate and follow along, you will need:
 * A personal GitHub account
 * A basic knowledge of Chef and policyfiles.
 * 7zip or the like for Windows to Untar
-
 
 ## What we are doing in this Workshop
 
