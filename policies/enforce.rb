@@ -4,7 +4,7 @@ name 'enforce'
 default_source :chef_repo, '~/mealkit/cookbooks'
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'mealkit::default'
+run_list 'base::default'
 
 # atttributes
 
