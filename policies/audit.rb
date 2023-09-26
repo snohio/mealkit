@@ -1,4 +1,4 @@
-name 'base'
+name 'audit'
 
 # Where to find cookbooks:
 default_source :chef_repo, '~/mealkit/cookbooks'

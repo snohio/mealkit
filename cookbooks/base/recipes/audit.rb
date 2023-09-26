@@ -6,7 +6,7 @@
 # This cookbook holds all of the audit logic. There should only be include_profiles here and evaluates OS type and Version info to know which to run.
 
 if platform?('ubuntu')
-  include_profile 'stig_benchmarks::stig-canonicalubuntu20.04lts-cationly'
+  include_profile 'benchmarks::stig-canonicalubuntu20.04lts-cationly'
 
   cookbook_file '/tmp/waiver-ubuntu.yaml' do
     source 'waiver-ubuntu.yaml'
