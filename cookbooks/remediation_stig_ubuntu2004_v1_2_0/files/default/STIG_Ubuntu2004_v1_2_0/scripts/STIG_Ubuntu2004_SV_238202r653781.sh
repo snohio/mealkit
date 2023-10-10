@@ -1,0 +1,2 @@
+#!/bin/bash
+egrep -q '(^#*\s*)PASS_MIN_DAYS\s+[0-9]+(\s+.*)?$' /etc/login.defs && sed -ri 's/(^#*\s*)PASS_MIN_DAYS\s+[0-9]+(\s+.*)?$/PASS_MIN_DAYS 1\2/' /etc/login.defs || echo 'PASS_MIN_DAYS 1' >> /etc/login.defs

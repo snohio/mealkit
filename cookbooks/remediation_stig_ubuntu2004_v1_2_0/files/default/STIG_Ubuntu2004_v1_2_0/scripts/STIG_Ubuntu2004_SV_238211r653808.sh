@@ -1,0 +1,2 @@
+#!/bin/bash
+egrep -q '(^#*\s*)UsePAM\s+(yes|no)(\s+.*)?$' /etc/ssh/sshd_config && sed -ri 's/(^#*\s*)UsePAM\s+(yes|no)(\s+.*)?$/UsePAM yes\3/' /etc/ssh/sshd_config || echo 'UsePAM yes' >> /etc/ssh/sshd_config

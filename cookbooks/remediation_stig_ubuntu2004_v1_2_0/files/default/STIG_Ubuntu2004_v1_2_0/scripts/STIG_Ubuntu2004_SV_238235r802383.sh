@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo chmod 077 /etc/pam.d/common-auth
+sudo egrep "^auth\s*\[default=die\]\s*pam_faillock.so\s*authfail|^auth \s*sufficient\s*pam_faillock.so\s*authsucc" /etc/pam.d/common-auth || sudo echo -e "auth [default=die] pam_faillock.so authfail\nauth sufficient pam_faillock.so authsucc" >> /etc/pam.d/common-auth
+sudo egrep -q '(^#*\s*)silent(\s+.*)?$' /etc/security/faillock.conf && sudo sed -ri "s/(^#*\s*)silent(\s+.*)?$/silent\2/" /etc/security/faillock.conf || echo 'silent' >> sudo /etc/security/faillock.conf
+sudo egrep -q '(^#*\s*)audit(\s+.*)?$' /etc/security/faillock.conf && sudo sed -ri "s/(^#*\s*)audit(\s+.*)?$/audit\2/" /etc/security/faillock.conf || echo 'audit' >> sudo /etc/security/faillock.conf
+sudo egrep -q '(^#*\s*)deny\s*=\s*[0-9]+(\s+.*)?$' /etc/security/faillock.conf && sudo sed -ri "s/(^#*\s*)deny\s*=\s*[0-9]+(\s+.*)?$/deny = 3\2/" /etc/security/faillock.conf || echo 'deny = 3' >> sudo /etc/security/faillock.conf
+sudo egrep -q '(^#*\s*)fail_interval\s*=\s*[0-9]+(\s+.*)?$' /etc/security/faillock.conf && sudo sed -ri "s/(^#*\s*)fail_interval\s*=\s*[0-9]+(\s+.*)?$/fail_interval = 900\2/" /etc/security/faillock.conf || echo 'fail_interval = 900' >> sudo /etc/security/faillock.conf
+sudo egrep -q '(^#*\s*)unlock_time\s*=\s*[0-9]+(\s+.*)?$' /etc/security/faillock.conf && sudo sed -ri "s/(^#*\s*)unlock_time\s*=\s*[0-9]+(\s+.*)?$/unlock_time = 0\2/" /etc/security/faillock.conf || echo 'unlock_time = 0' >> sudo /etc/security/faillock.conf

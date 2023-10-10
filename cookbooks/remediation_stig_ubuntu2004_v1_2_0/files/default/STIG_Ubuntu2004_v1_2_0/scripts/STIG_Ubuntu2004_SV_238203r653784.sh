@@ -1,0 +1,2 @@
+#!/bin/bash
+egrep -q '(^#*\s*)PASS_MAX_DAYS\s+[0-9]+(\s+.*)?$' /etc/login.defs && sed -ri 's/(^#*\s*)PASS_MAX_DAYS\s+[0-9]+(\s+.*)?$/PASS_MAX_DAYS 60\2/' /etc/login.defs || echo 'PASS_MAX_DAYS 60' >> /etc/login.defs

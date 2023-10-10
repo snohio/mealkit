@@ -3,10 +3,10 @@ maintainer 'Mike Butler'
 maintainer_email 'michael.butler@progress.com'
 license 'All Rights Reserved'
 description 'Installs/Configures base'
-version '0.2.2'
+version '0.2.4'
 chef_version '>= 18.0'
 
-# depends 'benchmarks'
-# depends 'remediation_stig_ubuntu2004_v1_2_0_wrapper'
+depends 'benchmarks'
+depends 'remediation_stig_ubuntu2004_v1_2_0_wrapper'
 
 
