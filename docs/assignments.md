@@ -3,14 +3,14 @@
 | Attendee | Automate User / Chef Org / Org User | PEM Key        |
 | -------- | ----------------------------------- | -------------- |
 | Mike B.  | tandori                             | tandori.pem    |
-|          | pizza                               | pizza.pem      |
-|          | potpie                              | potpie.pem     |
-|          | meatloaf                            | meatloaf.pem   |
+| Dan      | pizza                               | pizza.pem      |
+| Craig    | potpie                              | potpie.pem     |
+| Mick     | meatloaf                            | meatloaf.pem   |
 |          | quesadilla                          | quesadilla.pem |
-|          | chili                               | chili.pem      |
+| Jurg     | chili                               | chili.pem      |
 |          | casserole                           | casserole.pem  |
 |          | sloppyjoe                           | sloppyjoe.pem  |
-|          | potroast                            | potroast.pem   |
+| Daniel   | potroast                            | potroast.pem   |
 
 | Org        | node          | IP         |
 | ---------- | ------------- | ---------- |

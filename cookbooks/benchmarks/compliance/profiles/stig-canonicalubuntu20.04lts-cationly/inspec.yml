@@ -1,0 +1,10 @@
+---
+name: stig-canonicalubuntu20.04lts-cationly
+title: Canonical Ubuntu 20.04 LTS Security Technical Implementation Guide CAT I Only
+summary: Canonical Ubuntu 20.04 LTS Security Technical Implementation Guide CAT I
+  Only translated from SCAP
+version: 1.2.0-1
+maintainer: Chef Software, Inc.
+copyright: Chef Software, Inc.
+copyright_email: support@chef.io
+license: Proprietary, All rights reserved

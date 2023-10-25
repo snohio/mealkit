@@ -1,0 +1,10 @@
+#!/bin/bash
+dpkg -s auditd || DEBIAN_FRONTEND=noninteractive apt-get -y install auditd
+if [ ! -f /etc/audit/rules.d/stig.rules ]; then
+    touch /etc/audit/rules.d/stig.rules
+fi
+egrep -q "^-a\s+(always,exit|exit,always)\s+-F\s+arch=b32\s+-S\s+creat,open,openat,open_by_handle_at,truncate,ftruncate\s+-F\s+exit=-EPERM\s+-F\s+auid>=1000\s+-F\s+auid!=4294967295\s+-k\s+perm_access\s*$" /etc/audit/rules.d/stig.rules || echo "-a always,exit -F arch=b32 -S creat,open,openat,open_by_handle_at,truncate,ftruncate -F exit=-EPERM -F auid>=1000 -F auid!=4294967295 -k perm_access" >> /etc/audit/rules.d/stig.rules
+egrep -q "^-a\s+(always,exit|exit,always)\s+-F\s+arch=b32\s+-S\s+creat,open,openat,open_by_handle_at,truncate,ftruncate\s+-F\s+exit=-EACCES\s+-F\s+auid>=1000\s+-F\s+auid!=4294967295\s+-k\s+perm_access\s*$" /etc/audit/rules.d/stig.rules || echo "-a always,exit -F arch=b32 -S creat,open,openat,open_by_handle_at,truncate,ftruncate -F exit=-EACCES -F auid>=1000 -F auid!=4294967295 -k perm_access" >> /etc/audit/rules.d/stig.rules
+uname -p | grep -q 'x86_64' && ( egrep -q "^-a\s+(always,exit|exit,always)\s+-F\s+arch=b64\s+-S\s+creat,open,openat,open_by_handle_at,truncate,ftruncate\s+-F\s+exit=-EPERM\s+-F\s+auid>=1000\s+-F\s+auid!=4294967295\s+-k\s+perm_access\s*$" /etc/audit/rules.d/stig.rules || echo "-a always,exit -F arch=b64 -S creat,open,openat,open_by_handle_at,truncate,ftruncate -F exit=-EPERM -F auid>=1000 -F auid!=4294967295 -k perm_access" >> /etc/audit/rules.d/stig.rules )
+uname -p | grep -q 'x86_64' && ( egrep -q "^-a\s+(always,exit|exit,always)\s+-F\s+arch=b64\s+-S\s+creat,open,openat,open_by_handle_at,truncate,ftruncate\s+-F\s+exit=-EACCES\s+-F\s+auid>=1000\s+-F\s+auid!=4294967295\s+-k\s+perm_access\s*$" /etc/audit/rules.d/stig.rules || echo "-a always,exit -F arch=b64 -S creat,open,openat,open_by_handle_at,truncate,ftruncate -F exit=-EACCES -F auid>=1000 -F auid!=4294967295 -k perm_access" >> /etc/audit/rules.d/stig.rules )
+sudo augenrules --load
