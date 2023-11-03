@@ -1,38 +1,38 @@
 export CHEF_PROFILE=default
 knife client list
-knife node delete node-linux-20
-knife node delete node-linux-19
-knife node delete node-linux-18
-knife node delete node-linux-17
-knife node delete node-linux-16
-knife node delete node-linux-15
-knife node delete node-linux-14
-knife node delete node-linux-13
-knife node delete node-linux-12
-knife node delete node-linux-11
-knife node delete node-linux-10
-knife node delete node-linux-09
-knife node delete node-linux-08
-knife node delete node-linux-07
-knife node delete node-linux-06
-knife node delete node-linux-05
-knife node delete node-linux-04
-knife node delete node-linux-03
-knife client delete node-linux-03
-knife client delete node-linux-04
-knife client delete node-linux-05
-knife client delete node-linux-06
-knife client delete node-linux-07
-knife client delete node-linux-08
-knife client delete node-linux-09
-knife client delete node-linux-10
-knife client delete node-linux-11
-knife client delete node-linux-12
-knife client delete node-linux-13
-knife client delete node-linux-14
-knife client delete node-linux-15
-knife client delete node-linux-16
-knife client delete node-linux-17
-knife client delete node-linux-18
-knife client delete node-linux-19
-knife client delete node-linux-20
+knife node delete node-linux-20 -y
+knife node delete node-linux-19 -y
+knife node delete node-linux-18 -y
+knife node delete node-linux-17 -y
+knife node delete node-linux-16 -y
+knife node delete node-linux-15 -y
+knife node delete node-linux-14 -y
+knife node delete node-linux-13 -y
+knife node delete node-linux-12 -y
+knife node delete node-linux-11 -y
+knife node delete node-linux-10 -y
+knife node delete node-linux-09 -y
+knife node delete node-linux-08 -y
+knife node delete node-linux-07 -y
+knife node delete node-linux-06 -y
+knife node delete node-linux-05 -y
+knife node delete node-linux-04 -y
+knife node delete node-linux-03 -y
+knife client delete node-linux-03 -y
+knife client delete node-linux-04 -y
+knife client delete node-linux-05 -y
+knife client delete node-linux-06 -y
+knife client delete node-linux-07 -y
+knife client delete node-linux-08 -y
+knife client delete node-linux-09 -y
+knife client delete node-linux-10 -y
+knife client delete node-linux-11 -y
+knife client delete node-linux-12 -y
+knife client delete node-linux-13 -y
+knife client delete node-linux-14 -y
+knife client delete node-linux-15 -y
+knife client delete node-linux-16 -y
+knife client delete node-linux-17 -y
+knife client delete node-linux-18 -y
+knife client delete node-linux-19 -y
+knife client delete node-linux-20 -y
