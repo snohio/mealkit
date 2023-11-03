@@ -192,5 +192,17 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/api/v0/infra
 * Role through the list to do a `knife node delete node-linux-xx`.
 * Also do a `knife client delete node-linux-xx`
 
-### Remove the client.rb file from all the nodes
+> You can run `bash ~/mealkit/nothingtoseehere/scripts/node-delete.sh` and it will remove all of the nodes. Make sure you have it_devops org in your credentials named [default]
 
+### Re-bootstrap with knife bootstrap commands
+
+* From the workstation, you can rebootstrap all of the nodes.
+
+```bash
+export CHEF_PROFILE=tandori
+knife bootstrap node-linux-03 -N node-linux-03 -x ubuntu -i ~/.ssh/sys_admin.pem --sudo
+knife bootstrap node-linux-04 -N node-linux-04 -x ubuntu -i ~/.ssh/sys_admin.pem --sudo
+knife client list
+```
+
+> You can run `bash ~/mealkit/nothingtoseehere/scripts/rebootstrap.sh` assuming your credentials file is all good and you have your hosts file up to date.
