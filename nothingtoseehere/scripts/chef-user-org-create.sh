@@ -2,7 +2,7 @@ rm ../*.pem
 chef-server-ctl user-create tandori tandori User tandori@chef.io tandori -f ../tandori.pem
 chef-server-ctl user-create pizza pizza User pizza@chef.io pizza1 -f ../pizza.pem
 chef-server-ctl user-create potpie potpie User potpie@chef.io potpie -f ../potpie.pem
-chef-server-ctl user-create meatloaf meatloaf User meatloaf@chef.io meatloaf -f meatloaf.pem
+chef-server-ctl user-create meatloaf meatloaf User meatloaf@chef.io meatloaf -f ../meatloaf.pem
 chef-server-ctl user-create quesadilla quesadilla User quesadilla@chef.io quesadilla -f ../quesadilla.pem
 chef-server-ctl user-create chili chili User chili@chef.io chili1 -f ../chili.pem
 chef-server-ctl user-create casserole casserole User casserole@chef.io casserole -f ../casserole.pem
