@@ -1,3 +1,4 @@
+#!/bin/bash
 export CHEF_PROFILE=tandori
 knife bootstrap node-linux-03 -N node-linux-03 -x ubuntu -i ~/.ssh/sys_admin.pem --sudo -y
 knife bootstrap node-linux-04 -N node-linux-04 -x ubuntu -i ~/.ssh/sys_admin.pem --sudo -y

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/roles' \
 --header 'Content-Type: application/json' \
 --header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \

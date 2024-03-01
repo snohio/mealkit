@@ -1,3 +1,4 @@
+#!/bin/bash
 export CHEF_PROFILE=default
 knife client list
 knife node delete node-linux-20 -y
