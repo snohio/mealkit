@@ -21,14 +21,16 @@ You can do this with any number of users and orgs, it ends up being one org per 
 * `chef-automate status` for an Automate health check
 * `pwd` and make sure you are in `/home/ubuntu`
 * `git clone https://ghp_YoUrPAtTokenGoesHere@github.com/snohio/mealkit.git`
-* `cd mealkitothingtoseehere/` We are going to replace all of the tokens here. There is a .pem and _validator.pem for every user / org. 
+* `cd mealkit/nothingtoseehere/scripts` We are going to replace all of the tokens here. There is a .pem and _validator.pem for every user / org.
 * `rm *.pem` as these will be needed on the workstation and the users machines later.
-* run `bash ./chef-user-org-create.sh` to create all of the orgs
+* run `bash ./chef-user-org-create.sh` to create all of the users orgs
 * commit the changes with `git add *` `git commit -am "new pems"` `git push origin`
 
 You should now have all of the users and orgs created and the pem files are now back in Github. We'll pull those down onto the Workstation when we bootstrap nodes to their respective mealkits.
 
 ## Create the Users, Roles, Policies and Projects in Automate
+
+All of the below can be done by running `bash ~/mealkit/nothingtoseehere/scripts/automate-acl.sh`. Before running it, you will need to edit that and find / replace the api-token with the one that is created which you can find in Automate.
 
 * Create the Role that we need to assign to the Policies. You'll need to update the header token from Automate.
 

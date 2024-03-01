@@ -1,3 +1,23 @@
+curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/roles' \
+--header 'Content-Type: application/json' \
+--header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--data '{
+    "id": "mealkit-owner",
+    "name": "Mealkit Owner",
+    "actions": [
+        "reportmanager:*",
+        "event:*:get",
+        "event:*:list",
+        "infra:nodes:get",
+        "infra:nodes:list",
+        "infra:infraServers:list",
+        "infra:infraServers:get",
+        "infra:infraServers:update",
+        "compliance:*:get",
+        "compliance:*:list"
+    ],
+    "projects": []
+}'
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
 --header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
