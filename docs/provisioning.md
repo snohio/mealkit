@@ -181,6 +181,8 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/api/v0/infra
 
 ### Pre Work
 
+> NOTE: Do this from the Workstation system
+
 * `git clone https://ghp_YoUrPAtTokenGoesHere@github.com/snohio/mealkit.git`
 * Create a hosts file with all of the nodes and their IP addresses on the Workstation
 * Move the old credentials file `mv ~/.chef/credentials ~/.chef/credentials.orig`
@@ -195,6 +197,12 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/api/v0/infra
 * Also do a `knife client delete node-linux-xx`
 
 > You can run `bash ~/mealkit/nothingtoseehere/scripts/node-delete.sh` and it will remove all of the nodes. Make sure you have it_devops org in your credentials named [default]
+
+### Remove the client.pem key from all of the nodes
+
+* ssh to all of the nodes and run `sudo rm /etc/chef/client.pem`
+
+> You can run `bash ~/mealkit/nothingtoseehere/scripts/remove-client.pem.sh` which points to your ~/.ssh/sys_admin.pem
 
 ### Re-bootstrap with knife bootstrap commands
 
