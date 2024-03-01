@@ -1,6 +1,6 @@
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/roles' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "id": "mealkit-owner",
     "name": "Mealkit Owner",
@@ -20,7 +20,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 }'
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "tandori",
   "name": "Tandori",
@@ -29,7 +29,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "pizza",
   "name": "Pizza",
@@ -38,7 +38,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "potpie",
   "name": "Potpie",
@@ -47,7 +47,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "meatloaf",
   "name": "Meatloaf",
@@ -56,7 +56,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "quesadilla",
   "name": "Quesadilla",
@@ -65,7 +65,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "chili",
   "name": "Chili",
@@ -74,7 +74,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "casserole",
   "name": "Casserole",
@@ -83,7 +83,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "sloppyjoe",
   "name": "Sloppy Joe",
@@ -92,7 +92,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/users' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "potroast",
   "name": "Pot Roast",
@@ -101,7 +101,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "tandori",
   "name": "Tandori Project",
@@ -110,7 +110,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "pizza",
   "name": "pizza Project",
@@ -119,7 +119,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "potpie",
   "name": "Potpie Project",
@@ -128,7 +128,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "meatloaf",
   "name": "Meatloaf Project",
@@ -137,7 +137,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "quesadilla",
   "name": "Quesadilla Project",
@@ -146,7 +146,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "chili",
   "name": "Chili Project",
@@ -155,7 +155,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "casserole",
   "name": "Casserole Project",
@@ -164,7 +164,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "sloppyjoe",
   "name": "Sloppy Joe Project",
@@ -173,7 +173,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "id": "potroast",
   "name": "Potroast Project",
@@ -182,7 +182,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects' \
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/tandori/rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "conditions": [
     {
@@ -200,7 +200,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/tandor
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/pizza/rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "conditions": [
     {
@@ -218,7 +218,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/pizza/
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/potpie/rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "conditions": [
     {
@@ -236,7 +236,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/potpie
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/meatloaf/rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "conditions": [
     {
@@ -254,7 +254,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/meatlo
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/quesadilla/rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "conditions": [
     {
@@ -272,7 +272,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/quesad
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/chili/rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "conditions": [
     {
@@ -290,7 +290,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/chili/
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/casserole/rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "conditions": [
     {
@@ -308,7 +308,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/casser
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/sloppyjoe/rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "conditions": [
     {
@@ -326,7 +326,7 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/sloppy
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/potroast/rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
   "conditions": [
     {
@@ -344,13 +344,13 @@ curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/projects/potroa
 
 curl --location 'https://mealkit.azure.chef-demo.com/apis/iam/v2/apply-rules' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
 }'
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/policies' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "name": "Tandori Project Owners",
     "id": "tandori-project-owners",
@@ -374,7 +374,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/policies' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "name": "pizza Project Owners",
     "id": "pizza-project-owners",
@@ -398,7 +398,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/policies' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "name": "potpie Project Owners",
     "id": "potpie-project-owners",
@@ -422,7 +422,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/policies' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "name": "meatloaf Project Owners",
     "id": "meatloaf-project-owners",
@@ -446,7 +446,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/policies' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "name": "quesadilla Project Owners",
     "id": "quesadilla-project-owners",
@@ -470,7 +470,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/policies' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "name": "chili Project Owners",
     "id": "chili-project-owners",
@@ -494,7 +494,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/policies' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "name": "casserole Project Owners",
     "id": "casserole-project-owners",
@@ -518,7 +518,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/policies' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "name": "sloppyjoe Project Owners",
     "id": "sloppyjoe-project-owners",
@@ -542,7 +542,7 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/
 
 curl --location --request POST 'https://mealkit.azure.chef-demo.com/apis/iam/v2/policies' \
 --header 'Content-Type: application/json' \
---header 'api-token: eHss7Yf-nby8n65HnVBqNvTxgoQ=' \
+--header 'api-token: 5KCZeGdLVI6AMk2a7TuHD7cNQA4=' \
 --data '{
     "name": "potroast Project Owners",
     "id": "potroast-project-owners",
