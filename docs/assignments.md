@@ -9,7 +9,7 @@
 | Mauro    | quesadilla                          | quesadilla.pem |
 | Randy    | chili                               | chili.pem      |
 | Bomba    | casserole                           | casserole.pem  |
-|          | sloppyjoe                           | sloppyjoe.pem  |
+| Chris    | sloppyjoe                           | sloppyjoe.pem  |
 |          | potroast                            | potroast.pem   |
 
 | Org        | node          | IP         |
