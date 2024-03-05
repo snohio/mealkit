@@ -10,7 +10,7 @@
 | Randy    | chili                               | chili.pem      |
 | Bomba    | casserole                           | casserole.pem  |
 | Chris    | sloppyjoe                           | sloppyjoe.pem  |
-|          | potroast                            | potroast.pem   |
+| Scott    | potroast                            | potroast.pem   |
 
 | Org        | node          | IP         |
 | ---------- | ------------- | ---------- |
