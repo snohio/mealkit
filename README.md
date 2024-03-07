@@ -1,10 +1,10 @@
 # mealkit
 
-Chef Mealkit Workshop for ChefConf 2023
+Chef Mealkit Workshop for ChefConf 2024
 
 ## Information
 
-This is the base repository for the *Preparing a Delicious Dish of Compliance from a Chef "Meal Kit"* Workshop presented at [ChefConf 2023](https://chefconf.chef.io) in Seattle Washington and Munich Germany. 
+This is the base repository for the *Preparing a Delicious Dish of Compliance from a Chef "Meal Kit"* Workshop presented at [ChefConf 2024](https://chefconf.chef.io) in Seattle Washington and Munich Germany.
 
 More documentation is available on the [Mealkit Github Pages](https://snohio.github.io/mealkit/).
 

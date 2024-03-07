@@ -1,4 +1,4 @@
-# copyright: 2023, Mike Butler
+# copyright: 2024, Mike Butler
 
 control 'chef-client-schedule' do
   impact 0.7
@@ -6,7 +6,7 @@ control 'chef-client-schedule' do
   describe systemd_service('chef-client.timer') do
     it { should be_installed }
     it { should be_enabled }
-    it { should be_running }      
+    it { should be_running }
   end
   describe file('/etc/systemd/system/chef-client.timer') do
     its('content') { should include('OnUnitActiveSec=5min') }

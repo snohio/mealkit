@@ -2,19 +2,19 @@
 # Cookbook:: base
 # Recipe:: audit
 #
-# Copyright:: 2022, The Authors, All Rights Reserved.
-# This cookbook holds all of the audit logic. There should only be include_profiles here and evaluates OS type and Version info to know which to run.
+# Copyright:: 2024, The Authors, All Rights Reserved.
+# This recipe holds all of the audit logic. It applies the waiver file
 
 if platform?('ubuntu')
   include_profile 'benchmarks::stig-canonicalubuntu20.04lts-cationly'
 
-  cookbook_file '/tmp/waiver-ubuntu.yaml' do
-    source 'waiver-ubuntu.yaml'
+  cookbook_file '/etc/chef/waiver-ubuntu.yaml' do
+    source 'waiver.yaml'
     owner  'root'
     group  'root'
     action :create
   end
-  node.default['audit']['waiver_file'] = '/tmp/waiver-ubuntu.yaml'
+  node.default['audit']['waiver_file'] = '/etc/chef/waiver.yaml'
 
 else
   log 'unsupported' do

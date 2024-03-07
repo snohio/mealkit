@@ -2,7 +2,7 @@
 # Cookbook:: base
 # Recipe:: default
 #
-# Copyright:: 2023, The Authors, All Rights Reserved.
+# Copyright:: 2024, Progress Chef, All Rights Reserved.
 
 if node['mealkit']['mode'] == 'client'
 
