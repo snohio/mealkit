@@ -8,7 +8,7 @@
 if platform?('ubuntu')
   include_profile 'benchmarks::stig-canonicalubuntu20.04lts-cationly'
 
-  cookbook_file '/etc/chef/waiver-ubuntu.yaml' do
+  cookbook_file '/etc/chef/waiver.yaml' do
     source 'waiver.yaml'
     owner  'root'
     group  'root'
