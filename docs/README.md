@@ -6,7 +6,7 @@ You can also find this published as a [Github Page](https://snohio.github.io/mea
 
 Chef's Premium Content is delivered fresh to you with only the finest ingredients of code. Utilizing that premium audit and remediation content (as I like to call it "meal kit"), I will teach you how to create a wrapper of compliance to deliver to your systems to ensure persistence and validation. Utilizing this method will get you from sous to head chef in the shortest time possible.
 
-In this 90 Minute Workshop, we are going to create a wrapper cookbook with the premium STIG (Security Technical Implementation Guides), understand and implement waivers, use the Chef Infra remediation wrapper with exceptions, and deliver the content to a provided Ubuntu and Windows server.
+In this 90 Minute Workshop, we are going to create a wrapper cookbook with the premium STIG (Security Technical Implementation Guides), understand and implement waivers, use the Chef Infra remediation wrapper with exceptions, and deliver the content to a provided Ubuntu 20_04 server.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ For this Workshop to participate and follow along, you will need:
 
 Other things we are going to learn in this workshop are:
 
-* Integrating Compliance Profiles into cookbooks and use the Compliance Phase. This eliminates the need to have profiles stored in other places and us tokens to access those.
+* Integrating Compliance Profiles into cookbooks and use the Compliance Phase. This eliminates the need to have profiles stored in other places and use tokens to access those.
 * Looking at output in Automate - Infrastructure and Compliance
 
 Due to time constraints, we are only going to use the Ubuntu 20.04 content, but adding additional content and guarding for different platforms is relatively easy and repeatable.
@@ -41,7 +41,7 @@ We are going to run our cookbook in three modes, client only (or base), audit on
 
 ## Some information about Chef Premium Content (Disclaimer)
 
-> NOTE: We are using and sharing Progress Chef proprietary content. This is for educational purposes only. Please do not use or share this content without proper authority. Please check with your Account Exec to verify that you are entitled to the Chef Premium Content. Typically if sold Chef with Inspec as a part of our Compliance Automate SKU, you would be entitled.
+> NOTE: We are using and sharing Progress Chef proprietary content. This is for educational purposes only. Please do not use or share this content without proper authority. Please check with your Account Exec to verify that you are entitled to the Chef Premium Content. Typically it is sold with Chef InSpec as a part of our Compliance Automate SKU.
 
 ## My Setup
 

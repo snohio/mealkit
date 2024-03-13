@@ -21,8 +21,9 @@ You can do this with any number of users and orgs, it ends up being one org per 
 * `chef-automate status` for an Automate health check
 * `pwd` and make sure you are in `/home/ubuntu`
 * `git clone https://ghp_YoUrPAtTokenGoesHere@github.com/snohio/mealkit.git`
-* `cd mealkit/nothingtoseehere/scripts` We are going to replace all of the tokens here. There is a .pem and _validator.pem for every user / org.
+* `cd mealkit/nothingtoseehere`
 * `rm *.pem` as these will be needed on the workstation and the users machines later.
+* `cd mealkit/nothingtoseehere/scripts` We are going to replace all of the tokens here. There is a .pem and _validator.pem for every user / org.
 * run `bash ./chef-user-org-create.sh` to create all of the users orgs
 * commit the changes with `git add *` `git commit -am "new pems"` `git push origin`
 
