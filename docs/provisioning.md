@@ -22,12 +22,18 @@ You can do this with any number of users and orgs, it ends up being one org per 
 * `pwd` and make sure you are in `/home/ubuntu`
 * `git clone https://ghp_YoUrPAtTokenGoesHere@github.com/snohio/mealkit.git`
 * `cd mealkit/nothingtoseehere`
-* `rm *.pem` as these will be needed on the workstation and the users machines later.
-* `cd mealkit/nothingtoseehere/scripts` We are going to replace all of the tokens here. There is a .pem and _validator.pem for every user / org.
+* `rm *.pem` as these will be needed on the workstation and the users machines later. We are going to replace all of the tokens here. There is a .pem and _validator.pem for every user / org.
+* `cd mealkit/nothingtoseehere/scripts`
 * run `bash ./chef-user-org-create.sh` to create all of the users orgs
 * commit the changes with `git add *` `git commit -am "new pems"` `git push origin`
 
 You should now have all of the users and orgs created and the pem files are now back in Github. We'll pull those down onto the Workstation when we bootstrap nodes to their respective mealkits.
+
+## On the Workstation
+
+* `pwd` and make sure you are in `/home/ubuntu`
+* `git clone https://ghp_YoUrPAtTokenGoesHere@github.com/snohio/mealkit.git`
+* `cd mealkit/nothingtoseehere/scripts` and check out what we have
 
 ## Create the Users, Roles, Policies and Projects in Automate
 
@@ -187,14 +193,14 @@ curl --location --request POST 'https://mealkit.azure.chef-demo.com/api/v0/infra
 * `git clone https://ghp_YoUrPAtTokenGoesHere@github.com/snohio/mealkit.git`
 * Create a hosts file with all of the nodes and their IP addresses on the Workstation
 * Move the old credentials file `mv ~/.chef/credentials ~/.chef/credentials.orig`
-* Put the credentials file that is in the `cp ~/mealkit/nothingtoseehere/credentials ~/.chefcat /credentials`
+* Put the credentials file that is in the `cp ~/mealkit/nothingtoseehere/credentials ~/.chef/credentials`
 * You actually need to merge those two together. Default should be the it_devops org.
 * Test with `export CHEF_PROFILE=default` `knife client list`
 
 ### Remove the nodes from the default it_devops org
 
 * Set the profile to default with `export CHEF_PROFILE=default`
-* Role through the list to do a `knife node delete node-linux-xx`.
+* Roll through the list to do a `knife node delete node-linux-xx`.
 * Also do a `knife client delete node-linux-xx`
 
 > You can run `bash ~/mealkit/nothingtoseehere/scripts/node-delete.sh` and it will remove all of the nodes. Make sure you have it_devops org in your credentials named [default]
@@ -217,3 +223,7 @@ knife client list
 ```
 
 > You can run `bash ~/mealkit/nothingtoseehere/scripts/rebootstrap.sh` assuming your credentials file is all good and you have your hosts file up to date.
+
+## ALL DONE
+
+Check Automate, log in with a couple of different users.
